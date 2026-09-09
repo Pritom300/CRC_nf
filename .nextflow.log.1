@@ -1,0 +1,284 @@
+Sep-09 20:37:54.861 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Sep-09 20:37:55.004 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.0
+Sep-09 20:37:55.054 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/pritom-sarkar/.nextflow/plugins; core-plugins: nf-amazon@3.9.0,nf-azure@1.22.2,nf-cloudcache@0.6.0,nf-codecommit@0.5.1,nf-console@1.3.0,nf-google@1.27.2,nf-k8s@1.5.2,nf-seqera@0.19.0,nf-tower@1.27.0,nf-wave@1.20.0
+Sep-09 20:37:55.093 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-09 20:37:55.094 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-09 20:37:55.098 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Sep-09 20:37:55.119 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Sep-09 20:37:55.275 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Sep-09 20:37:55.281 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-09 20:37:55.307 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/pritom-sarkar/Experiment_PLOS_Revision/CRC_PLOS/CRC/nextflow.config
+Sep-09 20:37:55.309 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/pritom-sarkar/Experiment_PLOS_Revision/CRC_PLOS/CRC/nextflow.config
+Sep-09 20:37:55.313 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Sep-09 20:37:55.328 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Sep-09 20:37:55.821 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-09 20:37:55.822 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-09 20:37:55.843 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/pritom-sarkar/.nextflow/secrets/store.json
+Sep-09 20:37:55.848 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@127a7272] - activable => nextflow.secret.LocalSecretsProvider@127a7272
+Sep-09 20:37:55.868 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [peaceful_ardinghelli] - revision: c050de5608
+Sep-09 20:37:56.012 [main] DEBUG nextflow.Session - Session UUID: 88b9cf56-634e-47ce-8e0b-f29d0357af81
+Sep-09 20:37:56.012 [main] DEBUG nextflow.Session - Run name: peaceful_ardinghelli
+Sep-09 20:37:56.013 [main] DEBUG nextflow.Session - Executor pool size: 12
+Sep-09 20:37:56.027 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-09 20:37:56.039 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-09 20:37:56.073 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.0 build 12031
+  Created: 29-04-2026 04:00 UTC (10:00 BDST)
+  System: Linux 6.14.0-33-generic
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 17.0.20+8-1-24.04-Ubuntu
+  Encoding: UTF-8 (UTF-8)
+  Process: 8008@hp-laptop [127.0.1.1]
+  CPUs: 12 - Mem: 7.4 GB (3 GB) - Swap: 4 GB (4 GB)
+Sep-09 20:37:56.101 [main] DEBUG nextflow.Session - Work-dir: /home/pritom-sarkar/Experiment_PLOS_Revision/CRC_PLOS/CRC/work [ext2/ext3]
+Sep-09 20:37:56.102 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/pritom-sarkar/Experiment_PLOS_Revision/CRC_PLOS/CRC/bin
+Sep-09 20:37:56.114 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-09 20:37:56.129 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-09 20:37:56.133 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Sep-09 20:37:56.196 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-09 20:37:56.212 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Sep-09 20:37:56.288 [main] DEBUG nextflow.Session - Session start
+Sep-09 20:37:56.295 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Sep-09 20:37:56.902 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-09 20:37:57.254 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.254 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.267 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-09 20:37:57.278 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=7.4 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Sep-09 20:37:57.283 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-09 20:37:57.339 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_LoadData': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.404 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.405 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.407 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_LimmaAnalysis': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.457 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:R_Annotation` matches process R_Annotation
+Sep-09 20:37:57.465 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.465 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.468 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_Annotation': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.479 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.480 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.481 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_StepMiner': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.493 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.493 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.495 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_TransitionMapping': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.512 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.512 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.514 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_StageClassification': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.535 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.535 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.537 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_PermutationStabilityCheck': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.551 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.551 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.553 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_ExternalValidation': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.561 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.561 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.562 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_LiverLungOverlapCheck': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.570 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.570 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.572 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_MetastasisOrganMarkerCheck': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.578 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.579 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.580 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_PairedPrimaryMetastasisCheck': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.589 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.589 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.591 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_FeatureSizeSensitivity': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.599 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.599 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.601 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_BootstrapFeatureStability': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.613 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.613 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.614 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_BootstrapCI': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.626 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.626 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.627 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_BalancedMetricsClassWeight': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.635 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.636 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.637 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_EnsemblMapping': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.652 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.652 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.653 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_MultiCohortValidation': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.663 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.664 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.665 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_BloodCrossValidation': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.672 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:Python_KEGGAnalysis|Python_GOAnalysis` matches process Python_KEGGAnalysis
+Sep-09 20:37:57.673 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.673 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.674 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_KEGGAnalysis': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.678 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:Python_KEGGAnalysis|Python_GOAnalysis` matches process Python_GOAnalysis
+Sep-09 20:37:57.679 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-09 20:37:57.679 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 20:37:57.680 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_GOAnalysis': maxForks=1; fair=false; array=0
+Sep-09 20:37:57.683 [main] DEBUG nextflow.Session - Process names: R_StageClassification, R_LimmaAnalysis, R_PermutationStabilityCheck, R_BalancedMetricsClassWeight, R_PairedPrimaryMetastasisCheck, Python_MultiCohortValidation, Python_EnsemblMapping, R_TransitionMapping, Python_BloodCrossValidation, R_ExternalValidation, Python_GOAnalysis, R_LiverLungOverlapCheck, R_FeatureSizeSensitivity, R_BootstrapFeatureStability, Python_KEGGAnalysis, R_MetastasisOrganMarkerCheck, R_Annotation, R_StepMiner, R_LoadData, R_BootstrapCI
+Sep-09 20:37:57.688 [main] DEBUG nextflow.Session - Igniting dataflow network (29)
+Sep-09 20:37:57.695 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_LoadData
+Sep-09 20:37:57.696 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_LimmaAnalysis
+Sep-09 20:37:57.697 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_Annotation
+Sep-09 20:37:57.697 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_StepMiner
+Sep-09 20:37:57.698 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_TransitionMapping
+Sep-09 20:37:57.698 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_StageClassification
+Sep-09 20:37:57.698 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_PermutationStabilityCheck
+Sep-09 20:37:57.699 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_ExternalValidation
+Sep-09 20:37:57.700 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_LiverLungOverlapCheck
+Sep-09 20:37:57.700 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_MetastasisOrganMarkerCheck
+Sep-09 20:37:57.700 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_PairedPrimaryMetastasisCheck
+Sep-09 20:37:57.700 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_FeatureSizeSensitivity
+Sep-09 20:37:57.700 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_BootstrapFeatureStability
+Sep-09 20:37:57.701 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_BootstrapCI
+Sep-09 20:37:57.701 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_BalancedMetricsClassWeight
+Sep-09 20:37:57.701 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_EnsemblMapping
+Sep-09 20:37:57.702 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_MultiCohortValidation
+Sep-09 20:37:57.702 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_BloodCrossValidation
+Sep-09 20:37:57.702 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_KEGGAnalysis
+Sep-09 20:37:57.702 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_GOAnalysis
+Sep-09 20:37:57.703 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Main: /home/pritom-sarkar/Experiment_PLOS_Revision/CRC_PLOS/CRC/main.nf
+Sep-09 20:37:57.703 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-09 20:37:57.703 [main] DEBUG nextflow.Session - Session await
+Sep-09 20:37:57.903 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-09 20:37:57.907 [Task submitter] INFO  nextflow.Session - [05/cc95b6] Submitted process > R_LoadData (1)
+Sep-09 20:38:01.203 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Sep-09 20:38:01.206 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-09 20:38:01.272 [SIGINT handler] DEBUG nextflow.Session - The following nodes are still active:
+[process] R_LimmaAnalysis
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: gz_file
+  port 1: (queue) OPEN  ; channel: classified_metadata
+  port 2: (cntrl) -     ; channel: $
+
+[process] R_Annotation
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: single_deg_file
+  port 1: (cntrl) -     ; channel: $
+
+[process] R_StepMiner
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: expr_clean_rds
+  port 1: (queue) OPEN  ; channel: pheno_clean_rds
+  port 2: (queue) OPEN  ; channel: deg_csvs
+  port 3: (cntrl) -     ; channel: $
+
+[process] R_TransitionMapping
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: ordered_samples_rds
+  port 1: (queue) OPEN  ; channel: pheno_clean_rds
+  port 2: (queue) OPEN  ; channel: stepminer_csv
+  port 3: (cntrl) -     ; channel: $
+
+[process] R_StageClassification
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: expr_train_rds
+  port 1: (queue) OPEN  ; channel: expr_test_rds
+  port 2: (queue) OPEN  ; channel: pheno_test_rds
+  port 3: (queue) OPEN  ; channel: expr_clean_rds
+  port 4: (queue) OPEN  ; channel: pheno_clean_rds
+  port 5: (queue) OPEN  ; channel: q8_csv
+  port 6: (cntrl) -     ; channel: $
+
+[process] R_PermutationStabilityCheck
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: pheno_clean_rds
+  port 1: (queue) OPEN  ; channel: ordered_samples_rds
+  port 2: (queue) OPEN  ; channel: expr_final_rds
+  port 3: (queue) OPEN  ; channel: stage_boundaries_rds
+  port 4: (queue) OPEN  ; channel: step_results_rds
+  port 5: (queue) OPEN  ; channel: selected_genes_rds
+  port 6: (cntrl) -     ; channel: $
+
+[process] R_ExternalValidation
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: rf_model
+  port 1: (queue) OPEN  ; channel: x_train_rds
+  port 2: (queue) OPEN  ; channel: valid_matrix
+  port 3: (queue) OPEN  ; channel: valid_clinical
+  port 4: (cntrl) -     ; channel: $
+
+[process] R_LiverLungOverlapCheck
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: q8_csv
+  port 1: (cntrl) -     ; channel: $
+
+[process] R_MetastasisOrganMarkerCheck
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: gz_file
+  port 1: (queue) OPEN  ; channel: q8_csv
+  port 2: (cntrl) -     ; channel: $
+
+[process] R_PairedPrimaryMetastasisCheck
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: gz_file
+  port 1: (queue) OPEN  ; channel: q8_csv
+  port 2: (cntrl) -     ; channel: $
+
+[process] R_FeatureSizeSensitivity
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: pheno_clean_rds
+  port 1: (queue) OPEN  ; channel: expr_clean_rds
+  port 2: (queue) OPEN  ; channel: q8_csv
+  port 3: (cntrl) -     ; channel: $
+
+[process] R_BootstrapFeatureStability
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: expr_train_rds
+  port 1: (queue) OPEN  ; channel: pheno_clean_rds
+  port 2: (queue) OPEN  ; channel: common_genes_rds
+  port 3: (cntrl) -     ; channel: $
+
+[process] R_BootstrapCI
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: rf_model
+  port 1: (queue) OPEN  ; channel: expr_test_rds
+  port 2: (queue) OPEN  ; channel: pheno_test_rds
+  port 3: (queue) OPEN  ; channel: common_genes_rds
+  port 4: (queue) OPEN  ; channel: x_test_rds
+  port 5: (queue) OPEN  ; channel: y_test_rds
+  port 6: (queue) OPEN  ; channel: predictions_gse_rds
+  port 7: (queue) OPEN  ; channel: accuracy_rds
+  port 8: (queue) OPEN  ; channel: accuracy_primary_rds
+  port 9: (cntrl) -     ; channel: $
+
+[process] R_BalancedMetricsClassWeight
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: x_train_rds
+  port 1: (queue) OPEN  ; channel: y_train_rds
+  port 2: (queue) OPEN  ; channel: x_test_rds
+  port 3: (queue) OPEN  ; channel: y_test_rds
+  port 4: (queue) OPEN  ; channel: rf_model
+  port 5: (cntrl) -     ; channel: $
+
+[process] Python_EnsemblMapping
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: importance_csv
+  port 1: (cntrl) -     ; channel: $
+
+[process] Python_MultiCohortValidation
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: importance_csv
+  port 1: (queue) OPEN  ; channel: train_matrix
+  port 2: (queue) OPEN  ; channel: matrix_110223
+  port 3: (queue) OPEN  ; channel: matrix_164191
+  port 4: (queue) OPEN  ; channel: matrix_142987
+  port 5: (queue) OPEN  ; channel: gpl_platform
+  port 6: (queue) OPEN  ; channel: ensg_json
+  port 7: (cntrl) -     ; channel: $
+
+[process] Python_BloodCrossValidation
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: importance_csv
+  port 1: (queue) OPEN  ; channel: matrix_164191
+  port 2: (queue) OPEN  ; channel: gpl_platform
+  port 3: (cntrl) -     ; channel: $
+
+[process] Python_KEGGAnalysis
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: blood_csv
+  port 1: (cntrl) -     ; channel: $
+
+[process] Python_GOAnalysis
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: blood_csv
+  port 1: (cntrl) -     ; channel: $
+
+Sep-09 20:38:01.283 [SIGINT handler] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+Sep-09 20:38:01.309 [SIGINT handler] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=3 GB; ]
+Sep-09 20:38:01.357 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-09 20:38:01.358 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-09 20:38:01.358 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=3 GB; ]
+Sep-09 20:38:01.382 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-09 20:38:01.398 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
