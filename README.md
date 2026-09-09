@@ -1,3 +1,4 @@
+<img width="1235" height="790" alt="Screenshot from 2026-09-09 23-02-58" src="https://github.com/user-attachments/assets/2a81ee85-d572-4018-86b8-ee867ee4ac5e" />
 
 ---
 
@@ -88,9 +89,9 @@ nextflow run main.nf -resume
 
 Ensure internet connection during pipeline run. After the pipeline finishes, all outputs are saved automatically:
 
-results/
-├── figures/    ← All plots 
-└── tables/     ← All result tables 
+results/figures/ (All figures)
+
+results/tables/ (All result tables) 
 
 ---
 
