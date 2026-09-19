@@ -81,6 +81,8 @@ That's it.
 # Resume if pipeline was interrupted
 nextflow run main.nf -resume
 
+#if you want to see with console output
+nextflow run main.nf -process.debug
 ```
 
 ---
