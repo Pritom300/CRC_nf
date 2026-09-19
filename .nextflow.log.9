@@ -1,228 +1,222 @@
-Sep-18 12:40:40.061 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
-Sep-18 12:40:40.194 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.0
-Sep-18 12:40:40.232 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/pritom-sarkar/.nextflow/plugins; core-plugins: nf-amazon@3.9.0,nf-azure@1.22.2,nf-cloudcache@0.6.0,nf-codecommit@0.5.1,nf-console@1.3.0,nf-google@1.27.2,nf-k8s@1.5.2,nf-seqera@0.19.0,nf-tower@1.27.0,nf-wave@1.20.0
-Sep-18 12:40:40.260 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Sep-18 12:40:40.261 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Sep-18 12:40:40.264 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
-Sep-18 12:40:40.286 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-Sep-18 12:40:40.447 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
-Sep-18 12:40:40.452 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Sep-18 12:40:40.479 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/nextflow.config
-Sep-18 12:40:40.481 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/nextflow.config
-Sep-18 12:40:40.485 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
-Sep-18 12:40:40.499 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Sep-18 12:40:40.836 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Sep-18 12:40:40.837 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Sep-18 12:40:40.852 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/pritom-sarkar/.nextflow/secrets/store.json
-Sep-18 12:40:40.856 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@127a7272] - activable => nextflow.secret.LocalSecretsProvider@127a7272
-Sep-18 12:40:40.870 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [mad_kalman] - revision: c050de5608
-Sep-18 12:40:41.009 [main] DEBUG nextflow.Session - Session UUID: f50bf1b7-f1ce-4dd7-8934-a96f22ed988f
-Sep-18 12:40:41.010 [main] DEBUG nextflow.Session - Run name: mad_kalman
-Sep-18 12:40:41.011 [main] DEBUG nextflow.Session - Executor pool size: 12
-Sep-18 12:40:41.025 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Sep-18 12:40:41.038 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-18 12:40:41.076 [main] DEBUG nextflow.cli.CmdRun - 
+Sep-18 12:45:20.902 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -process.debug
+Sep-18 12:45:21.017 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.0
+Sep-18 12:45:21.045 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/pritom-sarkar/.nextflow/plugins; core-plugins: nf-amazon@3.9.0,nf-azure@1.22.2,nf-cloudcache@0.6.0,nf-codecommit@0.5.1,nf-console@1.3.0,nf-google@1.27.2,nf-k8s@1.5.2,nf-seqera@0.19.0,nf-tower@1.27.0,nf-wave@1.20.0
+Sep-18 12:45:21.069 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-18 12:45:21.070 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-18 12:45:21.073 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Sep-18 12:45:21.086 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Sep-18 12:45:21.179 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Sep-18 12:45:21.183 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-18 12:45:21.208 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/nextflow.config
+Sep-18 12:45:21.210 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/nextflow.config
+Sep-18 12:45:21.213 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Sep-18 12:45:21.230 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Sep-18 12:45:21.734 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-18 12:45:21.735 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-18 12:45:21.755 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/pritom-sarkar/.nextflow/secrets/store.json
+Sep-18 12:45:21.759 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@48b4a043] - activable => nextflow.secret.LocalSecretsProvider@48b4a043
+Sep-18 12:45:21.779 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [desperate_lumiere] - revision: c050de5608
+Sep-18 12:45:21.931 [main] DEBUG nextflow.Session - Session UUID: 8e1f2670-4f64-42d5-ba0a-f6683701611c
+Sep-18 12:45:21.932 [main] DEBUG nextflow.Session - Run name: desperate_lumiere
+Sep-18 12:45:21.933 [main] DEBUG nextflow.Session - Executor pool size: 12
+Sep-18 12:45:21.948 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-18 12:45:21.960 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-18 12:45:21.991 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 26.04.0 build 12031
   Created: 29-04-2026 04:00 UTC (10:00 BDST)
   System: Linux 6.14.0-33-generic
   Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 17.0.20+8-1-24.04-Ubuntu
   Encoding: UTF-8 (UTF-8)
-  Process: 6560@hp-laptop [127.0.1.1]
-  CPUs: 12 - Mem: 7.4 GB (3.8 GB) - Swap: 4 GB (4 GB)
-Sep-18 12:40:41.103 [main] DEBUG nextflow.Session - Work-dir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work [ext2/ext3]
-Sep-18 12:40:41.104 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/bin
-Sep-18 12:40:41.116 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Sep-18 12:40:41.129 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Sep-18 12:40:41.133 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
-Sep-18 12:40:41.190 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Sep-18 12:40:41.202 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
-Sep-18 12:40:41.257 [main] DEBUG nextflow.Session - Session start
-Sep-18 12:40:41.263 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
-Sep-18 12:40:41.840 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Sep-18 12:40:42.136 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.136 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.154 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Sep-18 12:40:42.163 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=7.4 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
-Sep-18 12:40:42.167 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Sep-18 12:40:42.220 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_LoadData': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.318 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.318 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.319 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_LimmaAnalysis': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.351 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:R_Annotation` matches process R_Annotation
-Sep-18 12:40:42.354 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.355 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.356 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_Annotation': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.363 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.364 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.365 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_StepMiner': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.405 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.405 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.408 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_TransitionMapping': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.444 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.445 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.447 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_StageClassification': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.473 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.473 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.474 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_PermutationStabilityCheck': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.489 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.489 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.492 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_ExternalValidation': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.504 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.504 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.506 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_LiverLungOverlapCheck': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.512 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.512 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.513 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_MetastasisOrganMarkerCheck': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.518 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.519 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.520 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_PairedPrimaryMetastasisCheck': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.528 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.528 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.529 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_FeatureSizeSensitivity': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.536 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.536 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.537 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_BootstrapFeatureStability': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.550 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.550 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.551 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_BootstrapCI': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.562 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.562 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.563 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_BalancedMetricsClassWeight': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.572 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.572 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.573 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_EnsemblMapping': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.587 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.587 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.588 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_MultiCohortValidation': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.600 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.600 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.601 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_BloodCrossValidation': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.608 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:Python_KEGGAnalysis|Python_GOAnalysis` matches process Python_KEGGAnalysis
-Sep-18 12:40:42.610 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.610 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.611 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_KEGGAnalysis': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.615 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:Python_KEGGAnalysis|Python_GOAnalysis` matches process Python_GOAnalysis
-Sep-18 12:40:42.616 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Sep-18 12:40:42.616 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-18 12:40:42.617 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_GOAnalysis': maxForks=1; fair=false; array=0
-Sep-18 12:40:42.620 [main] DEBUG nextflow.Session - Process names: R_StageClassification, R_LimmaAnalysis, R_PermutationStabilityCheck, R_BalancedMetricsClassWeight, R_PairedPrimaryMetastasisCheck, Python_MultiCohortValidation, Python_EnsemblMapping, R_TransitionMapping, Python_BloodCrossValidation, R_ExternalValidation, Python_GOAnalysis, R_LiverLungOverlapCheck, R_FeatureSizeSensitivity, R_BootstrapFeatureStability, Python_KEGGAnalysis, R_MetastasisOrganMarkerCheck, R_Annotation, R_StepMiner, R_LoadData, R_BootstrapCI
-Sep-18 12:40:42.625 [main] DEBUG nextflow.Session - Igniting dataflow network (29)
-Sep-18 12:40:42.635 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_LoadData
-Sep-18 12:40:42.636 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_LimmaAnalysis
-Sep-18 12:40:42.637 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_Annotation
-Sep-18 12:40:42.637 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_StepMiner
-Sep-18 12:40:42.638 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_TransitionMapping
-Sep-18 12:40:42.638 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_StageClassification
-Sep-18 12:40:42.639 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_PermutationStabilityCheck
-Sep-18 12:40:42.640 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_ExternalValidation
-Sep-18 12:40:42.640 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_LiverLungOverlapCheck
-Sep-18 12:40:42.641 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_MetastasisOrganMarkerCheck
-Sep-18 12:40:42.641 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_PairedPrimaryMetastasisCheck
-Sep-18 12:40:42.641 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_FeatureSizeSensitivity
-Sep-18 12:40:42.642 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_BootstrapFeatureStability
-Sep-18 12:40:42.642 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_BootstrapCI
-Sep-18 12:40:42.642 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_BalancedMetricsClassWeight
-Sep-18 12:40:42.642 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_EnsemblMapping
-Sep-18 12:40:42.643 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_MultiCohortValidation
-Sep-18 12:40:42.644 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_BloodCrossValidation
-Sep-18 12:40:42.644 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_KEGGAnalysis
-Sep-18 12:40:42.645 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_GOAnalysis
-Sep-18 12:40:42.645 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Process: 10596@hp-laptop [127.0.1.1]
+  CPUs: 12 - Mem: 7.4 GB (2.3 GB) - Swap: 4 GB (4 GB)
+Sep-18 12:45:22.029 [main] DEBUG nextflow.Session - Work-dir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work [ext2/ext3]
+Sep-18 12:45:22.030 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/bin
+Sep-18 12:45:22.043 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-18 12:45:22.059 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-18 12:45:22.062 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Sep-18 12:45:22.119 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-18 12:45:22.127 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Sep-18 12:45:22.220 [main] DEBUG nextflow.Session - Session start
+Sep-18 12:45:22.227 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Sep-18 12:45:22.628 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-18 12:45:22.928 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:22.928 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:22.940 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-18 12:45:22.949 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=7.4 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Sep-18 12:45:22.952 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-18 12:45:23.004 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_LoadData': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.045 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.045 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.046 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_LimmaAnalysis': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.060 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:R_Annotation` matches process R_Annotation
+Sep-18 12:45:23.062 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.062 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.063 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_Annotation': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.066 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.067 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.068 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_StepMiner': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.088 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.089 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.091 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_TransitionMapping': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.119 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.120 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.122 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_StageClassification': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.139 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.140 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.140 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_PermutationStabilityCheck': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.145 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.145 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.146 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_ExternalValidation': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.149 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.149 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.150 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_LiverLungOverlapCheck': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.152 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.152 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.153 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_MetastasisOrganMarkerCheck': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.155 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.155 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.156 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_PairedPrimaryMetastasisCheck': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.158 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.159 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.159 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_FeatureSizeSensitivity': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.162 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.162 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.163 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_BootstrapFeatureStability': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.169 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.169 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.170 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_BootstrapCI': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.175 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.176 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.176 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'R_BalancedMetricsClassWeight': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.180 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.180 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.181 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_EnsemblMapping': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.188 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.188 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.189 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_MultiCohortValidation': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.194 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.194 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.195 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_BloodCrossValidation': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.199 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:Python_KEGGAnalysis|Python_GOAnalysis` matches process Python_KEGGAnalysis
+Sep-18 12:45:23.200 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.200 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.201 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_KEGGAnalysis': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.204 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:Python_KEGGAnalysis|Python_GOAnalysis` matches process Python_GOAnalysis
+Sep-18 12:45:23.204 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sep-18 12:45:23.204 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 12:45:23.205 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Python_GOAnalysis': maxForks=1; fair=false; array=0
+Sep-18 12:45:23.206 [main] DEBUG nextflow.Session - Process names: R_StageClassification, R_LimmaAnalysis, R_PermutationStabilityCheck, R_BalancedMetricsClassWeight, R_PairedPrimaryMetastasisCheck, Python_MultiCohortValidation, Python_EnsemblMapping, R_TransitionMapping, Python_BloodCrossValidation, R_ExternalValidation, Python_GOAnalysis, R_LiverLungOverlapCheck, R_FeatureSizeSensitivity, R_BootstrapFeatureStability, Python_KEGGAnalysis, R_MetastasisOrganMarkerCheck, R_Annotation, R_StepMiner, R_LoadData, R_BootstrapCI
+Sep-18 12:45:23.209 [main] DEBUG nextflow.Session - Igniting dataflow network (29)
+Sep-18 12:45:23.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_LoadData
+Sep-18 12:45:23.216 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_LimmaAnalysis
+Sep-18 12:45:23.217 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_Annotation
+Sep-18 12:45:23.217 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_StepMiner
+Sep-18 12:45:23.218 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_TransitionMapping
+Sep-18 12:45:23.218 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_StageClassification
+Sep-18 12:45:23.218 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_PermutationStabilityCheck
+Sep-18 12:45:23.219 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_ExternalValidation
+Sep-18 12:45:23.220 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_LiverLungOverlapCheck
+Sep-18 12:45:23.221 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_MetastasisOrganMarkerCheck
+Sep-18 12:45:23.221 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_PairedPrimaryMetastasisCheck
+Sep-18 12:45:23.221 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_FeatureSizeSensitivity
+Sep-18 12:45:23.221 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_BootstrapFeatureStability
+Sep-18 12:45:23.221 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_BootstrapCI
+Sep-18 12:45:23.221 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > R_BalancedMetricsClassWeight
+Sep-18 12:45:23.222 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_EnsemblMapping
+Sep-18 12:45:23.223 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_MultiCohortValidation
+Sep-18 12:45:23.224 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_BloodCrossValidation
+Sep-18 12:45:23.224 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_KEGGAnalysis
+Sep-18 12:45:23.224 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Python_GOAnalysis
+Sep-18 12:45:23.224 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
   Main: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/main.nf
-Sep-18 12:40:42.646 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Sep-18 12:40:42.646 [main] DEBUG nextflow.Session - Session await
-Sep-18 12:40:42.888 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:40:42.891 [Task submitter] INFO  nextflow.Session - [78/92795d] Submitted process > R_LoadData (1)
-Sep-18 12:40:53.626 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: R_LoadData (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/78/92795d8a2a608baf7659b8e7310543]
-Sep-18 12:40:53.628 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-18 12:40:53.682 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-18 12:40:53.699 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:40:53.701 [Task submitter] INFO  nextflow.Session - [49/ccbbcc] Submitted process > R_LimmaAnalysis (1)
-Sep-18 12:41:08.479 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: R_LimmaAnalysis (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/49/ccbbcc52e349f600497cf33653bad4]
-Sep-18 12:41:08.554 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:08.558 [Task submitter] INFO  nextflow.Session - [5a/eb0d9e] Submitted process > R_StepMiner (1)
-Sep-18 12:41:08.582 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:08.584 [Task submitter] INFO  nextflow.Session - [f4/44c592] Submitted process > R_Annotation (5)
-Sep-18 12:41:11.665 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: R_Annotation (5); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/f4/44c592bf2f43428891c716b9733a1c]
-Sep-18 12:41:11.675 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:11.681 [Task submitter] INFO  nextflow.Session - [e7/914a95] Submitted process > R_Annotation (3)
-Sep-18 12:41:12.031 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Process R_Annotation > Skipping output binding because one or more optional files are missing: fileoutparam<0>
-Sep-18 12:41:16.556 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: R_Annotation (3); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/e7/914a953e2b35db785c2461baa5921b]
-Sep-18 12:41:16.572 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:16.573 [Task submitter] INFO  nextflow.Session - [8c/7310fe] Submitted process > R_Annotation (4)
-Sep-18 12:41:20.327 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: R_Annotation (4); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/8c/7310feb7dee39d4832e51d1580270b]
-Sep-18 12:41:20.330 [TaskFinalizer-5] DEBUG nextflow.processor.TaskProcessor - Process R_Annotation > Skipping output binding because one or more optional files are missing: fileoutparam<0>
-Sep-18 12:41:20.333 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:20.333 [Task submitter] INFO  nextflow.Session - [50/ff2750] Submitted process > R_Annotation (2)
-Sep-18 12:41:22.731 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: R_StepMiner (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/5a/eb0d9e37400478f02c5b380e35b53c]
-Sep-18 12:41:23.740 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:23.741 [Task submitter] INFO  nextflow.Session - [ba/a1eb27] Submitted process > R_TransitionMapping (1)
-Sep-18 12:41:24.975 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: R_Annotation (2); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/50/ff2750d3a2e1ca5f1306df7d6ac9b2]
-Sep-18 12:41:24.981 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:24.983 [Task submitter] INFO  nextflow.Session - [3e/dd1e08] Submitted process > R_Annotation (1)
-Sep-18 12:41:25.632 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: R_TransitionMapping (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/ba/a1eb27e7040b9c1e66af79ce564e12]
-Sep-18 12:41:26.640 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:26.641 [Task submitter] INFO  nextflow.Session - [82/c0778d] Submitted process > R_StageClassification (1)
-Sep-18 12:41:28.955 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: R_Annotation (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/3e/dd1e0880559395490c004e5a261e77]
-Sep-18 12:41:28.962 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:28.963 [Task submitter] INFO  nextflow.Session - [6e/1db6ce] Submitted process > R_Annotation (6)
-Sep-18 12:41:31.935 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: R_Annotation (6); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/6e/1db6cee8d822917d0d32265a91bc5c]
-Sep-18 12:41:31.939 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Process R_Annotation > Skipping output binding because one or more optional files are missing: fileoutparam<0>
-Sep-18 12:41:31.951 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:31.951 [Task submitter] INFO  nextflow.Session - [a6/37b204] Submitted process > R_PairedPrimaryMetastasisCheck (1)
-Sep-18 12:41:42.132 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: R_PairedPrimaryMetastasisCheck (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/a6/37b20400ddd45d8a60949216aef8b2]
-Sep-18 12:41:42.138 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:42.139 [Task submitter] INFO  nextflow.Session - [99/5eda85] Submitted process > R_MetastasisOrganMarkerCheck (1)
-Sep-18 12:41:51.671 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: R_StageClassification (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/82/c0778d7c15b797c697003e94a6deb1]
-Sep-18 12:41:51.678 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:51.679 [Task submitter] INFO  nextflow.Session - [bb/f8a519] Submitted process > R_LiverLungOverlapCheck (1)
-Sep-18 12:41:52.342 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: R_MetastasisOrganMarkerCheck (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/99/5eda85f1e6534b94af9ed1235524d1]
-Sep-18 12:41:52.350 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:52.351 [Task submitter] INFO  nextflow.Session - [df/0f0c7d] Submitted process > R_PermutationStabilityCheck (1)
-Sep-18 12:41:52.364 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: R_LiverLungOverlapCheck (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/bb/f8a5196ef823001d3cd51857a7122a]
-Sep-18 12:41:52.374 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-18 12:41:52.375 [Task submitter] INFO  nextflow.Session - [97/e50e2f] Submitted process > Python_EnsemblMapping (1)
-Sep-18 12:41:52.809 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
-Sep-18 12:41:52.862 [SIGINT handler] DEBUG nextflow.Session - The following nodes are still active:
-[process] R_BootstrapCI
-  status=ACTIVE
-  port 0: (queue) OPEN  ; channel: rf_model
-  port 1: (queue) OPEN  ; channel: expr_test_rds
-  port 2: (queue) OPEN  ; channel: pheno_test_rds
-  port 3: (queue) OPEN  ; channel: common_genes_rds
-  port 4: (queue) OPEN  ; channel: x_test_rds
-  port 5: (queue) OPEN  ; channel: y_test_rds
-  port 6: (queue) OPEN  ; channel: predictions_gse_rds
-  port 7: (queue) OPEN  ; channel: accuracy_rds
-  port 8: (queue) OPEN  ; channel: accuracy_primary_rds
-  port 9: (cntrl) -     ; channel: $
-
-[process] Python_MultiCohortValidation
-  status=ACTIVE
-  port 0: (queue) OPEN  ; channel: importance_csv
-  port 1: (queue) OPEN  ; channel: train_matrix
-  port 2: (queue) OPEN  ; channel: matrix_110223
-  port 3: (queue) OPEN  ; channel: matrix_164191
-  port 4: (queue) OPEN  ; channel: matrix_142987
-  port 5: (queue) OPEN  ; channel: gpl_platform
-  port 6: (queue) OPEN  ; channel: ensg_json
-  port 7: (cntrl) -     ; channel: $
-
-[process] Python_KEGGAnalysis
-  status=ACTIVE
-  port 0: (queue) OPEN  ; channel: blood_csv
-  port 1: (cntrl) -     ; channel: $
-
-[process] Python_GOAnalysis
-  status=ACTIVE
-  port 0: (queue) OPEN  ; channel: blood_csv
-  port 1: (cntrl) -     ; channel: $
-
-Sep-18 12:41:52.867 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Sep-18 12:41:52.869 [SIGINT handler] WARN  n.processor.TaskPollingMonitor - Killing running tasks (2)
-Sep-18 12:41:52.893 [SIGINT handler] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=14; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=5; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=2; succeedDuration=1m 50s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=9 GB; ]
-Sep-18 12:41:53.020 [main] DEBUG nextflow.Session - Session await > all processes finished
-Sep-18 12:41:53.020 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Sep-18 12:41:53.024 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=14; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=5; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=2; succeedDuration=1m 50s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=9 GB; ]
-Sep-18 12:41:53.032 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Sep-18 12:41:53.055 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Sep-18 12:45:23.225 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-18 12:45:23.225 [main] DEBUG nextflow.Session - Session await
+Sep-18 12:45:23.461 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:45:23.466 [Task submitter] INFO  nextflow.Session - [80/8df02e] Submitted process > R_LoadData (1)
+Sep-18 12:45:32.132 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: R_LoadData (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/80/8df02e092c5a83207af9905dc52a37]
+Sep-18 12:45:32.133 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-18 12:45:32.180 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-18 12:45:32.189 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:45:32.191 [Task submitter] INFO  nextflow.Session - [a1/41a8c5] Submitted process > R_LimmaAnalysis (1)
+Sep-18 12:45:46.012 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: R_LimmaAnalysis (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/a1/41a8c536105bdc8a0cad030a851d8c]
+Sep-18 12:45:46.079 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:45:46.081 [Task submitter] INFO  nextflow.Session - [72/fc26d3] Submitted process > R_StepMiner (1)
+Sep-18 12:45:46.105 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:45:46.107 [Task submitter] INFO  nextflow.Session - [92/3cbf8f] Submitted process > R_Annotation (5)
+Sep-18 12:45:49.104 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: R_Annotation (5); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/92/3cbf8f045cb9ffb7471bffc8b24b34]
+Sep-18 12:45:49.110 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:45:49.111 [Task submitter] INFO  nextflow.Session - [7d/8f061f] Submitted process > R_Annotation (2)
+Sep-18 12:45:49.312 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Process R_Annotation > Skipping output binding because one or more optional files are missing: fileoutparam<0>
+Sep-18 12:45:53.263 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: R_Annotation (2); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/7d/8f061fdb2f1931d0f54f456dcb5573]
+Sep-18 12:45:53.282 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:45:53.284 [Task submitter] INFO  nextflow.Session - [ba/1d7cce] Submitted process > R_Annotation (3)
+Sep-18 12:45:57.350 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: R_Annotation (3); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/ba/1d7cce83fcc8efebab5a47021c20ea]
+Sep-18 12:45:57.357 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:45:57.358 [Task submitter] INFO  nextflow.Session - [99/67869a] Submitted process > R_Annotation (1)
+Sep-18 12:45:58.259 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: R_StepMiner (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/72/fc26d365ee7d840c89a41b3ecbd714]
+Sep-18 12:45:59.265 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:45:59.265 [Task submitter] INFO  nextflow.Session - [a5/b0d16f] Submitted process > R_TransitionMapping (1)
+Sep-18 12:46:00.976 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: R_TransitionMapping (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/a5/b0d16fec7c9a71f53224c7bdc9c476]
+Sep-18 12:46:01.602 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: R_Annotation (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/99/67869a9ec10e125abb1662f94c9ba4]
+Sep-18 12:46:01.608 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:46:01.609 [Task submitter] INFO  nextflow.Session - [0f/e59cce] Submitted process > R_Annotation (6)
+Sep-18 12:46:01.621 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:46:01.622 [Task submitter] INFO  nextflow.Session - [c8/71145a] Submitted process > R_LiverLungOverlapCheck (1)
+Sep-18 12:46:02.367 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: R_LiverLungOverlapCheck (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/c8/71145ab8cf95ac0277172b4bb76ab8]
+Sep-18 12:46:02.373 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:46:02.374 [Task submitter] INFO  nextflow.Session - [cb/0429c8] Submitted process > R_PairedPrimaryMetastasisCheck (1)
+Sep-18 12:46:04.584 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: R_Annotation (6); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/0f/e59cce11146a51628ddc101fdd2510]
+Sep-18 12:46:04.588 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Process R_Annotation > Skipping output binding because one or more optional files are missing: fileoutparam<0>
+Sep-18 12:46:04.594 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:46:04.595 [Task submitter] INFO  nextflow.Session - [f6/7c4438] Submitted process > R_Annotation (4)
+Sep-18 12:46:07.471 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: R_Annotation (4); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/f6/7c4438a694ce5c666e2f54da7d2d42]
+Sep-18 12:46:07.474 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Process R_Annotation > Skipping output binding because one or more optional files are missing: fileoutparam<0>
+Sep-18 12:46:07.476 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:46:07.476 [Task submitter] INFO  nextflow.Session - [dd/821d9d] Submitted process > R_MetastasisOrganMarkerCheck (1)
+Sep-18 12:46:13.268 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: R_PairedPrimaryMetastasisCheck (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/cb/0429c83373066ab24b42dd4821c522]
+Sep-18 12:46:13.299 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:46:13.301 [Task submitter] INFO  nextflow.Session - [69/7fe372] Submitted process > R_StageClassification (1)
+Sep-18 12:46:18.556 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: R_MetastasisOrganMarkerCheck (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/dd/821d9d36fb70b25519f41f5ee9083e]
+Sep-18 12:46:35.946 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: R_StageClassification (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/69/7fe372973d1716021ebd7167fbec85]
+Sep-18 12:46:35.983 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:46:35.985 [Task submitter] INFO  nextflow.Session - [f6/cd547f] Submitted process > Python_EnsemblMapping (1)
+Sep-18 12:46:36.000 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:46:36.001 [Task submitter] INFO  nextflow.Session - [fd/f3463b] Submitted process > R_BootstrapFeatureStability (1)
+Sep-18 12:46:55.809 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: R_BootstrapFeatureStability (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/fd/f3463bce78bd16a0df4e7ab5f6a047]
+Sep-18 12:46:55.816 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:46:55.817 [Task submitter] INFO  nextflow.Session - [7c/7fc163] Submitted process > Python_BloodCrossValidation (1)
+Sep-18 12:47:15.450 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: Python_BloodCrossValidation (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/7c/7fc16311a6350195f0b7ca672b41c4]
+Sep-18 12:47:15.456 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:47:15.456 [Task submitter] INFO  nextflow.Session - [72/578a57] Submitted process > R_FeatureSizeSensitivity (1)
+Sep-18 12:47:22.357 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: Python_EnsemblMapping (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/f6/cd547fe5bd4d0bcacec01edf0d716f]
+Sep-18 12:47:22.363 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:47:22.364 [Task submitter] INFO  nextflow.Session - [39/ab63e2] Submitted process > R_PermutationStabilityCheck (1)
+Sep-18 12:47:25.995 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: R_FeatureSizeSensitivity (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/72/578a571975945f77a7455c1d02e5e2]
+Sep-18 12:47:26.003 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:47:26.004 [Task submitter] INFO  nextflow.Session - [d6/69ba7a] Submitted process > R_ExternalValidation (1)
+Sep-18 12:47:38.366 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: R_PermutationStabilityCheck (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/39/ab63e23a405599d2ab216aca4bd811]
+Sep-18 12:47:38.371 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:47:38.372 [Task submitter] INFO  nextflow.Session - [5a/62d68e] Submitted process > R_BalancedMetricsClassWeight (1)
+Sep-18 12:47:39.500 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: R_BalancedMetricsClassWeight (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/5a/62d68eacc688e481613fb36248f84e]
+Sep-18 12:47:39.514 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:47:39.514 [Task submitter] INFO  nextflow.Session - [59/5303df] Submitted process > Python_GOAnalysis (1)
+Sep-18 12:47:44.421 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: Python_GOAnalysis (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/59/5303dfe2ae65863973618561069dcd]
+Sep-18 12:47:44.424 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:47:44.424 [Task submitter] INFO  nextflow.Session - [1a/a21b30] Submitted process > Python_KEGGAnalysis (1)
+Sep-18 12:47:49.076 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: Python_KEGGAnalysis (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/1a/a21b308d9a305d766b7ca4e9ba1890]
+Sep-18 12:47:49.086 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:47:49.087 [Task submitter] INFO  nextflow.Session - [57/2011b6] Submitted process > Python_MultiCohortValidation (1)
+Sep-18 12:48:02.139 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: R_ExternalValidation (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/d6/69ba7a05fcd165c6e23aaae42fe6a1]
+Sep-18 12:48:02.159 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 12:48:02.159 [Task submitter] INFO  nextflow.Session - [78/c57fa7] Submitted process > R_BootstrapCI (1)
+Sep-18 12:48:03.026 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: R_BootstrapCI (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/78/c57fa7db0bd7cf4be1392397f4f85c]
+Sep-18 12:48:13.372 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: Python_MultiCohortValidation (1); status: COMPLETED; exit: 0; error: -; workDir: /home/pritom-sarkar/Experiment_PLOS_Revision/GIthub_CRC_PLOS/CRC_nf/work/57/2011b6e5795b52ae023120dd49a196]
+Sep-18 12:48:13.381 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-18 12:48:13.473 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-18 12:48:13.474 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-18 12:48:13.480 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Sep-18 12:48:13.481 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Sep-18 12:48:13.493 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=25; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=4m 45s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=9 GB; ]
+Sep-18 12:48:13.604 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-18 12:48:13.616 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Sep-18 12:48:13.616 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
