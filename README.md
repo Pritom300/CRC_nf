@@ -56,8 +56,8 @@ sudo mv nextflow /usr/local/bin/          *(moving system path)
 
 **Step 1 — Clone the project**
 ```bash
-git clone https://github.com/YOUR_USERNAME/Progression_CRC.git
-cd Progression_CRC
+git clone https://github.com/YOUR_USERNAME/CRC_nf.git
+cd CRC_nf
 ```
 
 **Step 2 — Build Docker images (one time only, ~15/20 mins)**
