@@ -4,6 +4,7 @@ nextflow.enable.dsl=2
 params.input_csv      = "${projectDir}/data/input/GSE41258_series_matrix.txt.gz"
 params.valid_matrix   = "${projectDir}/data/input/GSE14333_series_matrix.txt.gz"
 params.valid_clinical = "${projectDir}/data/input/GSE14333_clinical_data.csv"
+params.matrix_10715    = "${projectDir}/data/input/GSE10715_series_matrix.txt.gz"
 params.matrix_110223  = "${projectDir}/data/input/GSE110223_series_matrix.txt.gz"
 params.matrix_164191  = "${projectDir}/data/input/GSE164191_series_matrix.txt.gz"
 params.matrix_142987  = "${projectDir}/data/input/GSE142987_sample_count_matrix.txt.gz"
@@ -461,6 +462,36 @@ process Python_GOAnalysis {
     """
 }
 
+process Python_BloodBatchEffectValidation {
+    container 'progression_crc_python:latest'
+    publishDir "${params.tables_dir}",  mode: 'copy', pattern: "*.csv"
+    publishDir "${params.figures_dir}", mode: 'copy', pattern: "*.png"
+    publishDir "${params.rds_dir}",     mode: 'copy', pattern: "*.pkl"
+
+    input:
+    path importance_csv
+    path matrix_164191
+    path gpl_platform
+    path matrix_10715
+
+    output:
+    path "Final_Locked_Blood_Model.pkl"
+    path "Final_Locked_Blood_Probes.csv"
+    path "Figure_GSE10715_External_Validation_ROC.png"
+    path "GSE10715_External_Validation_Results.csv"
+    path "GSE10715_Batch_Correction_Comparison.csv"
+
+    script:
+    """
+    python3 /project/scripts/python/13.External_Validation_Blood_Batch_Effect.py \
+        ${importance_csv} \
+        ${matrix_164191} \
+        ${gpl_platform} \
+        ${matrix_10715} \
+        ./
+    """
+}
+
 workflow {
     input_file_ch = Channel.fromPath(params.input_csv)
 
@@ -574,4 +605,11 @@ workflow {
 
     Python_KEGGAnalysis(Python_BloodCrossValidation.out.blood_csv)
     Python_GOAnalysis(Python_BloodCrossValidation.out.blood_csv)
+    
+    Python_BloodBatchEffectValidation(
+        R_StageClassification.out.importance_csv,
+        Channel.fromPath(params.matrix_164191),
+        Channel.fromPath(params.gpl_platform),
+        Channel.fromPath(params.matrix_10715)
+    )
 }

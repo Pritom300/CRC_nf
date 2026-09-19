@@ -26,3 +26,14 @@
 2026-09-08 16:02:10	3m 2s	naughty_pasteur	OK	c050de5608d0883de81fa2a4c69b9612	893f78b1-26af-47fb-a396-2709571bea2c	nextflow run main.nf
 2026-09-09 20:37:56	5.4s	peaceful_ardinghelli	ERR	c050de5608d0883de81fa2a4c69b9612	88b9cf56-634e-47ce-8e0b-f29d0357af81	nextflow run main.nf
 2026-09-09 20:39:36	3m	lethal_plateau	OK	c050de5608d0883de81fa2a4c69b9612	2b397ffb-bb3f-4fc3-975d-30f2fe09803f	nextflow run main.nf
+2026-09-09 22:56:31	2m 59s	admiring_boltzmann	OK	c050de5608d0883de81fa2a4c69b9612	1083e964-6927-454b-bb7a-2d32c3c3743a	nextflow run main.nf
+2026-09-18 12:40:41	1m 12s	mad_kalman	ERR	c050de5608d0883de81fa2a4c69b9612	f50bf1b7-f1ce-4dd7-8934-a96f22ed988f	nextflow run main.nf
+2026-09-18 12:45:22	2m 52s	desperate_lumiere	OK	c050de5608d0883de81fa2a4c69b9612	8e1f2670-4f64-42d5-ba0a-f6683701611c	nextflow run main.nf -process.debug
+2026-09-19 13:54:19	-	jovial_mestorf	-	67efcc6e84b809cb06ba4d506ebeff57	149940df-85f6-4e6e-9b70-3dd081f305bd	nextflow run main.nf -process.debug
+2026-09-19 13:55:19	-	peaceful_tuckerman	-	50e563e2a3ff434d85d7edebc4b1b075	1a1a31f9-3312-4cf3-b2ac-a3e268b70424	nextflow run main.nf -process.debug
+2026-09-19 13:56:04	-	gigantic_curry	-	98a2d61ed748a57ac19601c42fa65e46	55729129-8e41-442a-b1d6-f9d15dfe1566	nextflow run main.nf -process.debug
+2026-09-19 13:56:32	-	exotic_venter	-	b0a51f540a29c56372598f01e75ef12b	c7251a22-845a-43fc-919e-b5deaf4fbd57	nextflow run main.nf -process.debug
+2026-09-19 13:57:53	-	thirsty_woese	-	b0a51f540a29c56372598f01e75ef12b	4378ebc0-66eb-46f9-9558-d4ecc5931bc7	nextflow run main.nf -process.debug
+2026-09-19 13:58:58	3m 16s	jolly_gilbert	OK	be3416fe7af721fc901e57ffac44bd1c	b50a56a5-280d-4491-94f9-049ccbc45c80	nextflow run main.nf -process.debug
+2026-09-19 14:19:53	3m 4s	nauseous_rosalind	OK	be3416fe7af721fc901e57ffac44bd1c	33aa501c-f5a8-4359-845b-32c53dd7870b	nextflow run main.nf -process.debug
+2026-09-19 14:31:10	3m 20s	modest_koch	OK	be3416fe7af721fc901e57ffac44bd1c	ff8adef8-7eb4-46f6-8558-d05cbf9be3a1	nextflow run main.nf -process.debug
